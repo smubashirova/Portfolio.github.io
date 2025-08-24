@@ -1,190 +1,400 @@
-<!DOCTYPE HTML>
-<HTML lang="en">
-<html>
-	<head>
-		<title>Shokhsanam Mubashirova</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQL2ND7XGR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shokhsanam Mubashirova – Technical Portfolio</title>
+    <meta name="description" content="Technical portfolio of Shokhsanam Mubashirova: Software Engineering, Web Development, C++, Python, UI/UX, Hackathons, and selected projects." />
 
-  gtag('config', 'G-TQL2ND7XGR');
-</script>
-	<body class="is-preload">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shokhsanam Mubashirova – Technical Portfolio" />
+    <meta property="og:description" content="Software & product-minded engineer. Projects, experience, and contact." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/og-card.png" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.png" alt="" style="width: 140px; height: auto;" /></span>
-						<h1>Shokhsanam Mubashirova</h1>
-					</header>
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="images/logo.png" />
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#about me" class="active">Introduction</a></li>
-							<li><a href="#experience"> Experience </a></li>
-							<li><a href="#projects"> Projects </a></li>
-							<li><a href="#hackathons"> Hackathons</a></li>
-                            <li><a href="#contact me"> Contact Me</a></li>
-						</ul>
-					</nav>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind config: enable class-based dark mode
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Inter", "ui-sans-serif", "system-ui", "-apple-system"],
+              body: ["Inter", "ui-sans-serif", "system-ui", "-apple-system"],
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(99,102,241,.15), 0 10px 30px -15px rgba(99,102,241,.35)",
+            },
+          },
+        },
+      };
+    </script>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
-						<!-- Introduction -->
-							<section id="about me" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>WHO AM I</h2>
-										</header>
-										<p>Hi! My name is Shokhsanam. Currently pursuing a Bachelor of Arts in Computer Science at Hunter College, I am a versatile professional with skills in software engineering, web development, and graphic design. I have experience in C++, Python, CSS, JavaScript, and HTML.</p>
-										<ul class="actions">
-										</ul>
-									</div>
-									<span class="image"><img src="images/img1.png" alt="" /></span>
-								</div>
-							</section>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQL2ND7XGR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-TQL2ND7XGR');
+    </script>
 
-						<!-- First Section -->
-							<section id="experience" class="main special">
-								<header class="major">
-									<h2>My Experience</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Technical Skills</h3>
-										<p>Python, C++, HTML, JavaScript, CSS</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>My Resume</h3>
-										 <a href="https://drive.google.com/file/d/1IvYARY3Y0WAGn8ZI3AnMPL9as-E1rRNh/view?usp=sharing"
-											 target="_blank">🔗</a>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Fellowship</h3>
-										<p>I had the incredible opportunity to participate in the Headstarter Summer Fellowship, a rigorous 7-week program that involved building AI projects, participating in hackathons, and developing a final project aimed at reaching 1000+ users. This experience has significantly sharpened my technical skills and professional acumen.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-									</ul>
-								</footer>
-							</section>
+    <style>
+      /* Smooth underline hover */
+      .link-underline {
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.2s ease;
+      }
+      .link-underline:hover { background-size: 100% 2px; }
 
-						<!-- Second Section -->
-							<section id="projects" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"><p></span>
-                                        <a href="https://replit.com/@smubashirova/SMubashirovaAdvocacyProject"
-											 target="_blank">YumCUNY</a>     
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-                                        <a href="https://github.com/smubashirova/Arithmetic-Game-C-/tree/main/1"
-                                        target="_blank"><p>Arithmetic Game</p></a> 
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<a href="https://github.com/smubashirova/Memory-Game-C-/tree/main/2"
-											 target="_blank"><p>Memory Game</p></a> 
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<a href="https://github.com/smubashirova/Hare-and-Tortoise-Competition-C-/tree/main/3"
-											 target="_blank">Competition</a> 
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<a href="https://youtu.be/goP1SE7JnVw?si=RzyPK6mqDsCi2Wtp"
-											 target="_blank"><p>COVID-19 Video</p></a> 
-									</li>
-								</ul>
-								
-								<footer class="major">
-									<ul class="actions special">
-									</ul>
-								</footer>
-							</section>
+      /* Active nav item indicator */
+      .nav-active::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: currentColor;
+        border-radius: 2px;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+    <!-- Sticky Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center gap-4">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="images/logo.png" alt="SM logo" class="h-8 w-8 rounded" loading="lazy" />
+          <span class="font-semibold tracking-tight">Shokhsanam Mubashirova</span>
+        </a>
+        <nav class="ml-auto hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:opacity-80 link-underline">About</a>
+          <a href="#experience" class="hover:opacity-80 link-underline">Experience</a>
+          <a href="#projects" class="hover:opacity-80 link-underline">Projects</a>
+          <a href="#hackathons" class="hover:opacity-80 link-underline">Hackathons</a>
+          <a href="#contact" class="hover:opacity-80 link-underline">Contact</a>
+        </nav>
+        <!-- Theme toggle -->
+        <button id="themeToggle" aria-label="Toggle dark mode" class="ml-2 inline-flex items-center justify-center rounded-xl border border-slate-200/70 dark:border-slate-800 px-3 py-2 text-sm hover:shadow-glow">
+          <i class="fa-solid fa-moon hidden dark:inline"></i>
+          <i class="fa-solid fa-sun dark:hidden"></i>
+        </button>
+      </div>
+    </header>
 
-						<!-- Get Started -->
-							<section id="hackathons" class="main special">
-								<header class="major">
-									<h2>Hackathons</h2>
-										 <a href="https://docs.google.com/presentation/d/1brnW2o54VWz3oV0x8HgTm3Ub4PTDyCyYJp2UwPWSkrQ/edit?usp=sharing"
-											 target="_blank"><p>Computer Science For All Hackathon 2021 Round 1</p></a>
-                                         <a href="https://docs.google.com/presentation/d/1ni3QQ8bwiFN6CppgjHnRwqOzvGKGrIVEibnRnYM8__4/edit?usp=sharing"
-											 target="_blank"><p>Computer Science For All Hackathon 2021 Round 2</p></a>
-                                        <a href="https://devpost.com/software/tour-guide-suggestion"
-											 target="_blank"><p>HackCUNY 2024</p></a>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-									</ul>
-								</footer>
-							</section>
-					</div>
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-sm uppercase tracking-widest text-indigo-600 font-semibold">Software • Product • Design</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
+            Building delightful, reliable software with impact
+          </h1>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-prose">
+            BA in Computer Science @ Hunter College. Experience across C++, Python, JS, and UI/UX. I enjoy turning ideas into
+            robust products and mentoring students through CodePath.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://drive.google.com/file/d/1IvYARY3Y0WAGn8ZI3AnMPL9as-E1rRNh/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-4 py-2.5 text-white hover:opacity-90">
+              <i class="fa-solid fa-file-lines"></i> Resume
+            </a>
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-2xl border border-slate-300 dark:border-slate-700 px-4 py-2.5 hover:shadow-glow">
+              <i class="fa-solid fa-code-branch"></i> View Projects
+            </a>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">C++</span>
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Python</span>
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">JavaScript</span>
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">HTML/CSS</span>
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">UI/UX</span>
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">AWS (alerts)</span>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="images/img1.png" alt="Portrait of Shokhsanam Mubashirova" class="w-full max-w-md md:max-w-lg mx-auto rounded-2xl shadow-xl" loading="lazy" />
+          <div class="absolute -z-10 inset-0 blur-3xl opacity-30" aria-hidden>
+            <div class="bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-emerald-400 w-[36rem] h-[36rem] rounded-full -translate-x-10 -translate-y-10"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Graphic Design Experience</h2>
-                                <a href="https://drive.google.com/file/d/1JaJhp_2qqDoUaV3tB9YuKMim47PlMLBR/view?usp=sharing"
-											 target="_blank"><p>Flyers</p></a>
-						
-							<ul class="actions">
-			
-							</ul>
-						</section>
-						<section>
-                            <section id="contact me" class="main special">
-								<header class="major">
-							<h2>Contact Me</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>Brooklyn, NY, USA</dd>
-								<dt>Phone</dt>
-								<dd>(646) 280-6775</dd>
-								<dt>Email</dt>
-								<dd><a href="#">mubashirovas@gmail.com</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/shokhsanammubashirova/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/smubashirova" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                                <li><a href="https://replit.com/@smubashirova" span class="image"><img src="images/rep.png" alt="" style="width: 42px; height: auto;" /></span></li>
-                                <li><a href="https://devpost.com/smubashirova?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" span class="image"><img src="images/dev.png" alt="" style="width: 50px; height: auto;" /></span></a></li>             
-							</ul>
-						</section>
-					</footer>
+    <!-- About -->
+    <section id="about" class="py-16 md:py-24 border-t border-slate-200/60 dark:border-slate-800">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-bold">About</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">
+          I'm a first‑gen student passionate about building tools that help communities. I’ve shipped websites, led hackathon teams,
+          and created educational content. Recently: Technical Specialist Intern at Floe (AWS anomaly alerts, WordPress resources page,
+          Figma designs), CodePath Tech Fellow (mentoring), and Headstarter Summer Fellowship (AI projects and demo days).
+        </p>
+      </div>
+    </section>
 
-			</div>
+    <!-- Experience -->
+    <section id="experience" class="py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-bold">Experience</h2>
+          <a href="https://www.linkedin.com/in/shokhsanammubashirova/" target="_blank" class="text-sm link-underline">LinkedIn</a>
+        </div>
+        <ol class="mt-10 relative border-s border-slate-200 dark:border-slate-800">
+          <!-- Item -->
+          <li class="relative pl-8 md:pl-10 py-6">
+            <span class="absolute left-0 top-7 h-3 w-3 rounded-full bg-indigo-600"></span>
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+              <div class="text-lg font-semibold">Technical Specialist Intern • Floe, Inc.</div>
+              <div class="text-sm text-slate-500">Summer 2025</div>
+            </div>
+            <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300 text-sm">
+              <li>Set up AWS anomaly alerts for DB monitoring and notifications.</li>
+              <li>Shipped WordPress resources pages and created Figma design systems.</li>
+              <li>Collaborated cross‑functionally; improved internal knowledge base.</li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li class="relative pl-8 md:pl-10 py-6">
+            <span class="absolute left-0 top-7 h-3 w-3 rounded-full bg-indigo-600"></span>
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+              <div class="text-lg font-semibold">CodePath • Tech Fellow (Python/DSA)</div>
+              <div class="text-sm text-slate-500">2024–2025</div>
+            </div>
+            <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300 text-sm">
+              <li>Taught recursion on binary trees; led weekly breakout sessions for 12+ students.</li>
+              <li>Wrote walkthroughs and office‑hour materials with step‑by‑step solutions.</li>
+            </ul>
+          </li>
+          <!-- Item -->
+          <li class="relative pl-8 md:pl-10 py-6">
+            <span class="absolute left-0 top-7 h-3 w-3 rounded-full bg-indigo-600"></span>
+            <div class="flex flex-col md:items-center md:flex-row md:justify-between gap-3">
+              <div class="text-lg font-semibold">Headstarter • SWE Fellow</div>
+              <div class="text-sm text-slate-500">2024</div>
+            </div>
+            <ul class="mt-2 list-disc pl-5 text-slate-600 dark:text-slate-300 text-sm">
+              <li>Built AI prototypes in weekly sprints; presented to mentors and peers.</li>
+              <li>Final project targeted 1,000+ users; emphasized usability and performance.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Projects -->
+    <section id="projects" class="py-16 md:py-24 border-t border-slate-200/60 dark:border-slate-800">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
+          <p class="text-sm text-slate-500">Selected work and coursework</p>
+        </div>
 
-	</body>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- YumCUNY -->
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 hover:shadow-glow transition">
+            <header class="flex items-center justify-between">
+              <h3 class="font-semibold">YumCUNY</h3>
+              <div class="text-xs text-slate-500">Web • JS</div>
+            </header>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Budget‑friendly dining finder with Google Maps integration, form validation, and theme toggling.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">HTML</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">CSS</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">JavaScript</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3 text-sm">
+              <a class="link-underline" target="_blank" href="https://replit.com/@smubashirova/SMubashirovaAdvocacyProject">Demo</a>
+            </div>
+          </article>
+
+          <!-- Arithmetic Game -->
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 hover:shadow-glow transition">
+            <header class="flex items-center justify-between">
+              <h3 class="font-semibold">Arithmetic Game</h3>
+              <div class="text-xs text-slate-500">C++</div>
+            </header>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">CLI game practicing arithmetic operations with scoring and input validation.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">C++17</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">OOP</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3 text-sm">
+              <a class="link-underline" target="_blank" href="https://github.com/smubashirova/Arithmetic-Game-C-/tree/main/1">Source</a>
+            </div>
+          </article>
+
+          <!-- Memory Game -->
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 hover:shadow-glow transition">
+            <header class="flex items-center justify-between">
+              <h3 class="font-semibold">Memory Game</h3>
+              <div class="text-xs text-slate-500">C++</div>
+            </header>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pair‑matching game showcasing STL usage and clean architecture.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">STL</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Data Structures</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3 text-sm">
+              <a class="link-underline" target="_blank" href="https://github.com/smubashirova/Memory-Game-C-/tree/main/2">Source</a>
+            </div>
+          </article>
+
+          <!-- Hare & Tortoise -->
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 hover:shadow-glow transition">
+            <header class="flex items-center justify-between">
+              <h3 class="font-semibold">Hare & Tortoise Competition</h3>
+              <div class="text-xs text-slate-500">C++</div>
+            </header>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Simulation of classic race with modular design and randomization.</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Simulation</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Algorithms</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3 text-sm">
+              <a class="link-underline" target="_blank" href="https://github.com/smubashirova/Hare-and-Tortoise-Competition-C-/tree/main/3">Source</a>
+            </div>
+          </article>
+
+          <!-- COVID video -->
+          <article class="group rounded-2xl border border-slate-200/70 dark:border-slate-800 p-5 hover:shadow-glow transition">
+            <header class="flex items-center justify-between">
+              <h3 class="font-semibold">COVID‑19 Awareness Video</h3>
+              <div class="text-xs text-slate-500">Motion</div>
+            </header>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Animated explainer developed during early pandemic to communicate safety tips.</p>
+            <div class="mt-4 flex items-center gap-3 text-sm">
+              <a class="link-underline" target="_blank" href="https://youtu.be/goP1SE7JnVw?si=RzyPK6mqDsCi2Wtp">Watch</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hackathons -->
+    <section id="hackathons" class="py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Hackathons</h2>
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a target="_blank" href="https://docs.google.com/presentation/d/1brnW2o54VWz3oV0x8HgTm3Ub4PTDyCyYJp2UwPWSkrQ/edit?usp=sharing" class="rounded-xl border border-slate-200/70 dark:border-slate-800 p-4 hover:shadow-glow transition">
+            CS4All Hackathon 2021 – Round 1
+          </a>
+          <a target="_blank" href="https://docs.google.com/presentation/d/1ni3QQ8bwiFN6CppgjHnRwqOzvGKGrIVEibnRnYM8__4/edit?usp=sharing" class="rounded-xl border border-slate-200/70 dark:border-slate-800 p-4 hover:shadow-glow transition">
+            CS4All Hackathon 2021 – Round 2
+          </a>
+          <a target="_blank" href="https://devpost.com/software/tour-guide-suggestion" class="rounded-xl border border-slate-200/70 dark:border-slate-800 p-4 hover:shadow-glow transition">
+            HackCUNY 2024 – Tour Guide Suggestion
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic Design -->
+    <section class="py-16 md:py-24 border-t border-slate-200/60 dark:border-slate-800">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="flex items-end justify-between">
+          <h2 class="text-2xl md:text-3xl font-bold">Graphic Design</h2>
+          <a class="text-sm link-underline" target="_blank" href="https://drive.google.com/file/d/1JaJhp_2qqDoUaV3tB9YuKMim47PlMLBR/view?usp=sharing">View Flyers</a>
+        </div>
+        <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl">From brand assets to motion graphics; I bring a design‑first lens to engineering work.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold">Let’s build something great</h2>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Open to SWE internships (frontend/backend/platform), product‑minded roles, and mentorship opportunities.</p>
+
+            <dl class="mt-6 text-sm">
+              <div class="grid grid-cols-3 gap-2 py-2 border-b border-slate-200/60 dark:border-slate-800">
+                <dt class="text-slate-500">Location</dt>
+                <dd class="col-span-2">Brooklyn, NY, USA</dd>
+              </div>
+              <div class="grid grid-cols-3 gap-2 py-2 border-b border-slate-200/60 dark:border-slate-800">
+                <dt class="text-slate-500">Phone</dt>
+                <dd class="col-span-2"><a href="tel:+16462806775" class="link-underline">(646) 280‑6775</a></dd>
+              </div>
+              <div class="grid grid-cols-3 gap-2 py-2">
+                <dt class="text-slate-500">Email</dt>
+                <dd class="col-span-2"><a href="mailto:mubashirovas@gmail.com" class="link-underline">mubashirovas@gmail.com</a></dd>
+              </div>
+            </dl>
+
+            <div class="mt-6 flex items-center gap-4 text-xl">
+              <a href="https://www.linkedin.com/in/shokhsanammubashirova/" target="_blank" aria-label="LinkedIn" class="hover:opacity-80"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/smubashirova" target="_blank" aria-label="GitHub" class="hover:opacity-80"><i class="fa-brands fa-github"></i></a>
+              <a href="https://replit.com/@smubashirova" target="_blank" aria-label="Replit" class="hover:opacity-80"><i class="fa-solid fa-code"></i></a>
+              <a href="https://devpost.com/smubashirova?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" aria-label="Devpost" class="hover:opacity-80"><i class="fa-solid fa-medal"></i></a>
+            </div>
+          </div>
+
+          <form class="bg-slate-50 dark:bg-slate-900/40 rounded-2xl p-6 border border-slate-200/60 dark:border-slate-800" action="mailto:mubashirovas@gmail.com" method="post" enctype="text/plain">
+            <label class="block text-sm font-medium" for="name">Name</label>
+            <input id="name" name="name" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2" />
+
+            <label class="block text-sm font-medium mt-4" for="email">Email</label>
+            <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2" />
+
+            <label class="block text-sm font-medium mt-4" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2"></textarea>
+
+            <button class="mt-5 inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-4 py-2.5 text-white hover:opacity-90" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Send
+            </button>
+          </form>
+        </div>
+        <p class="mt-10 text-xs text-slate-500">© <span id="year"></span> Shokhsanam Mubashirova</p>
+      </div>
+    </footer>
+
+    <!-- Scripts: Theme & Active Section -->
+    <script>
+      // Persisted dark mode
+      const root = document.documentElement;
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.classList.add('dark');
+      }
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        root.classList.toggle('dark');
+        localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+      });
+
+      // Active nav highlight on scroll
+      const sections = ['about','experience','projects','hackathons','contact'];
+      const opts = { rootMargin: '-40% 0px -55% 0px', threshold: 0 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          const link = document.querySelector(`header nav a[href="#${id}"]`);
+          if (!link) return;
+          if (entry.isIntersecting) link.classList.add('nav-active');
+          else link.classList.remove('nav-active');
+        });
+      }, opts);
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
+
+
 
